@@ -1,0 +1,23 @@
+body {
+  margin: 10px;
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+p::first-line {
+  color: antiquewhite;
+}
+
+::selection {
+  background-color: darkcyan;
+}
+
+p::before {
+  content: "Four score and seven years ago... ";
+  display: block;
+}

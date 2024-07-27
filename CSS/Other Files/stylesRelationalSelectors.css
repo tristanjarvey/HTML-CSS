@@ -1,0 +1,19 @@
+body {
+  margin: 10px;
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
+/* Below is a relational selector (selecting an element based on it's relationship with another element).
+    More specifically it's a "descendent selector" */
+#products p {
+  color: orange;
+}
+/* Can also do #products > p to select only the first p element after the products 'id' OR
+    #products + p to select the element immediately following the products section OR #products ~ p to
+    select all elements that are general siblings of the products section.*/
+
+/* Relational Selectors:
+    - allow for cleaner code
+    - can be fragile
+    - not as fast as basic selectors */

@@ -1,0 +1,25 @@
+body {
+  margin: 10px;
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
+#products {
+  color: orange;
+}
+
+.product {
+  color: gold;
+}
+
+/* Below is an example of selecting by attribute. a[target="_blank"] OR even a[href="https://google.com"] 
+    can also be used for more specificity. However, this type of code a[href="https://google.com"] is fragile
+    because one small change in the link could break this style rule */
+a[target] {
+  color: gold;
+}
+/* Other options:
+    a[href*="google"] = "contains"
+    a[href^="https"] = "starts with"
+    a[href$=".com"] = "ends with"
+    a[href^="https"] [href$=".com"] = "starts with AND ends with" */

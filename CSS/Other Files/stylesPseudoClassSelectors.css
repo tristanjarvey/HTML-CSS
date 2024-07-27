@@ -1,0 +1,40 @@
+body {
+  margin: 10px;
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
+/* p.first will apply to any PARAGRAPH element where class="first"
+    .first will apply to ANY element where class="first" */
+.first {
+  font-size: 140%;
+  font-style: italic;
+}
+
+/* ':first-child' is an example of a pseudo-class selector (i.e. a default class assigned by the browser).
+    'article p:first-of-type' can be used to select the first <p> element within article.
+    Other options: ':last-child' AND ':last-of-type'*/
+article p:first-of-type {
+  font-size: 160%;
+  font-style: oblique;
+}
+
+article :last-child {
+  font-weight: bold;
+}
+
+ul li:nth-child(3n) {
+  color: orange;
+}
+
+a:link {
+  color: gold;
+}
+
+a:visited {
+  color: darkcyan;
+}
+
+a:hover, a:focus {
+  color: darkgoldenrod;
+}
