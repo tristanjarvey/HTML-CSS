@@ -1,0 +1,25 @@
+body {
+  margin: 10px;
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
+/* color options: named, rgb, hsl, hexadecimal */
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(230, 188, 2, 1);
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to top right, blue, yellow, red 90%)
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at top left, black, yellow)
+}
