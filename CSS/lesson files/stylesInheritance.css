@@ -1,0 +1,17 @@
+body {
+  margin: 10px;
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
+/* generally, properties that change typography are inherited */
+
+p {
+  color: gold;
+  border: 1px solid white;
+}
+
+strong {
+  color: initial;
+  border: inherit;
+}

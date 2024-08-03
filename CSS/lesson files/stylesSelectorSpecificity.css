@@ -1,0 +1,29 @@
+body {
+  margin: 10px;
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
+/* if there are two conflicting rules that apply to a given element, the browser will apply whichever rule
+    is more specfic. The specificity hierarchy is as follows: ID selectors (e.g. #products) --> class/attribute
+    selectors (.products) --> element selectors (section). Hover mouse over rules ('h1', '.highlight', etc.)
+    to see their specificity. */
+h1 {
+  color: dodgerblue;
+}
+
+.highlight {
+  color: deeppink;
+}
+
+#products {
+  color: green;
+}
+/* if there are two of the same rule, only the last one will apply */
+#products {
+  color: brown;
+}
+
+.highlight #products {
+  color: dodgerblue;
+}

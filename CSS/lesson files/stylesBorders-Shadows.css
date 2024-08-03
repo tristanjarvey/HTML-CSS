@@ -1,0 +1,29 @@
+body {
+  margin: 10px;
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #e6bc02;
+  border: 10px solid white;
+  /* 'border-width' and 'border-style' may be used to define each side thickness or style in order of
+      top-right-bottom-left (clockwise from 12) */
+  border-width: 40px 30px 20px 10px;
+  border-radius: 100%;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: #e6bc02;
+  box-shadow: 5px 5px 20px #c6bdbd;
+}
+
+h1 {
+  color: black;
+  padding: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
