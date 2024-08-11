@@ -1,0 +1,28 @@
+body {
+    margin: 10px;
+    height: 200vh;
+}
+
+.tweet {
+    border: 3px solid lightgrey;
+}
+
+/* the rule below is to ensure the floated elements are covered within the parent element */
+.clearfix::after {
+    content: '';
+    display: block;
+    /* default in-line element, set display to block to make it a block-level element */
+    clear: both;
+}
+
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.clear {
+    clear: both;
+}

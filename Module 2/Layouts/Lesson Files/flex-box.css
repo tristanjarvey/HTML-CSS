@@ -1,0 +1,33 @@
+body {
+    margin: 10px;
+    height: 200vh;
+}
+
+.container {
+    border: 3px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; is used to wrap overflowing content*/
+    /* align-content: center; is used to uniformly center overflowing content */
+    height: 90vh;
+}
+
+.box {
+    flex-basis: 15rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex: 1 1 15rem;
+    /* 'flex: 1 1 15rem;' = flex-grow | flex-shrink | flex-basis */
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+}
+
+.box-one {
+    /* 'align-self: flex-start;' is applied to a single element to override align-items property */
+    flex-grow: 0;
+    /* 'flex-basis: 5rem;' will override the flex-basis setting in '.box' */
+}

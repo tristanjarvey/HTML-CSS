@@ -1,0 +1,23 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* '*' is the universal selector (i.e. it can be used to style ALL elements EXCEPT pseudo-elements),
+    which is why we use '*, *::before, *::after' */
+
+body {
+    margin: 10px;
+}
+
+.box::before {
+    content: "Hello";
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: gold;
+padding: 20px;
+/* padding and border may change the size of the content area unintentionally, whereas box-sizing can be
+    used to adjust the sizing more intentionally (see top of page)*/
+display: inline-block;
+}

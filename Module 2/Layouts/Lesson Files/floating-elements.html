@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="floating-elements.css" />
+  </head>
+  <body>
+    <article class="tweet">
+      <div class="avatar"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+  </body>
+</html>
+
+<!-- Common floated element issues:
+      Parent collapsing: parent elements by default don't see floated elements
+      Float clearing: we must clear floated elements after (best practice/standard is css rule "clearfix";
+        dirty solution: "overflow: ..."; unclean solution: "<div class="clear"></div>" after floated element) -->

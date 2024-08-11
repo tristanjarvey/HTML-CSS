@@ -10,7 +10,7 @@ body {
   background: #e6bc02;
   border: 10px solid white;
   /* 'border-width' and 'border-style' may be used to define each side thickness or style in order of
-      top-right-bottom-left (clockwise from 12) */
+      top-right-bottom-left (clockwise from 12 or 'trbl') */
   border-width: 40px 30px 20px 10px;
   border-radius: 100%;
 }

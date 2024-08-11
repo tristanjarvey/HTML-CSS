@@ -1,0 +1,11 @@
+body {
+    margin: 10px;
+}
+
+.box {
+    border: 3px solid gold;
+    width: 150px;
+    height: 150px;
+    overflow: auto hidden;
+    /* overflow: x-axis y-axis */
+}
