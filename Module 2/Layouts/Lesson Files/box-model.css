@@ -1,0 +1,16 @@
+body {
+    margin: 10px;
+    background-color: #1e1e1e;
+    color: aliceblue;
+  }
+
+p2 {
+    padding: 10px 20px; /* trbl; shortform for 10px 20px 10px 20px (i.e. vertical horizontal)*/
+    border: 5px solid gold;
+}
+/* named p2 to use the below code for learning purposes */
+
+p {
+    padding: 20px;
+    margin: 0;
+}

@@ -1,0 +1,46 @@
+body {
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background: gold;
+    padding: 1rem;
+}
+
+/* will target the 2nd occurence of an element with class="box" */
+.box:nth-of-type(2) {
+    background: purple;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+    }
+    .box {
+        background: antiquewhite;
+    }
+}
+
+/* we use absolute values for printers (i.e. "pt" instead of px, em, etc. AND "cm" or "in" instead of px) */
+@media print {
+    body {
+        font-size: 12pt;
+    }
+    .box {
+        padding: 0.5cm;
+    }
+}
+
+/* every device has different sizin parameters, don't choose arbitrary breakpoints.
+    choose ones that make sense for the design */

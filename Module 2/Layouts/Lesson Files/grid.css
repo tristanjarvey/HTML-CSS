@@ -1,0 +1,47 @@
+body {
+    margin: 10px;
+    height: 200vh;
+}
+
+.container {
+    display: grid;
+    /* 3 x 2 */
+    /* grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(2, 100px); */
+    /* above is long-hand syntax, below is short-hand */
+    /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
+    /* below is another option: */
+    grid-template: 100px auto 100px / 30fr 70fr; /* fr stands for "fraction of free space" */
+    grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer"; /* can type a '.' instead of "footer, header, main," etc. to indicate an empty cell */
+    gap: 10px;
+    border: 3px solid lightgrey;
+    /* justify-items: center; /* default value: 'stretch' */
+    /* align-items: center; /* default value: 'stretch' */
+    /* '-items' refer to individual items within a grid */
+    /* justify-content: center;
+    align-content: center; */
+    /* '-content' refers to the entire grid */
+    height: 100vh;
+}
+
+.box {
+    /* height: 5rem;
+    width: 5rem; */
+    background: gold;
+}
+
+.box-one {
+    /* span from column 1 to 3, can also use 1 / span 2 (to specify how many cells it will take up) */
+    /* grid-column: 1 / 3; */
+    /* grid area contains four numbers: */
+    /* start row / start column / end row / end column */
+    /* grid-area: 1 / 1 / 1 / 3; */
+    grid-area: header;
+}
+
+.box-four {
+    grid-area: footer;
+}

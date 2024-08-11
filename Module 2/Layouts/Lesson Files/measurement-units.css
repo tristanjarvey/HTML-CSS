@@ -1,0 +1,21 @@
+html {
+    font-size: 62.5%;
+    /* sets the default font size to 10px instead of 16px, so when we see '15rem'
+        it's equivalent to 150px */
+}
+
+body {
+    margin: 10px;
+}
+
+.box {
+    /* 'width: 50%' means 50% width of the parent element
+        'height: 100vh' means cover 100% of the viewport vertically
+        'width: 10em' means 10x the font size of the current element
+        'width: 10rem' means 10x the font size of the ROOT element (default: 16px) */
+    font-size: 20px;
+    width: 10rem;
+    height: 100vh;
+    background-color: gold;
+    border-top: 3px solid orange;
+}

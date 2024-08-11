@@ -1,0 +1,43 @@
+body {
+    margin: 10px;
+    height: 200vh;
+}
+
+.boxes {
+    border: 3px solid lightgrey;
+    position: relative;
+    /* if we want to position an object relative to its container, we must use the rule 'position: relative'
+        within the container */
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+}
+
+.box-one {
+    background: gold;
+}
+
+.box-two {
+    background: tomato;
+    position: fixed;
+    /* relative positioning does not affect other objects positioning, whereas absolute positioning will
+        remove that particular object from the normal flow of the page, so all other elements will render
+        as if that object doesn't exist */
+    top: 0;
+    left: 2rem;
+    right: 2rem;
+    width: auto;
+    /* right: 0; */
+    /* can be positive or negative (i.e. left: 5rem moves object 5rem to the right,
+        left: -5rem moves object 5rem to the left */
+    /* bottom: 0; */
+    z-index: 1;
+    /* z-index default is 0, so if we apply a negative value, the object moves further away (or behind),
+        if we apply a positive value it moves closer to us (or in front) */
+}
+
+.box-three {
+    background: dodgerblue;
+}
