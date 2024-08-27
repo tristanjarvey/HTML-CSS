@@ -11,7 +11,7 @@ body {
     /* above is long-hand syntax, below is short-hand */
     /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
     /* below is another option: */
-    grid-template: 100px auto 100px / 30fr 70fr; /* fr stands for "fraction of free space" */
+    grid-template: 100px auto 100px, 30fr 70fr; /* fr stands for "fraction of free space" */
     grid-template-areas:
     "header  header"
     "sidebar main"

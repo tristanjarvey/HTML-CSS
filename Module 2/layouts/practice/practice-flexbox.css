@@ -1,0 +1,28 @@
+body {
+    margin: 10px;
+    height: 200vh;
+    color: white;
+}
+
+.container {
+    border: 3px solid lightblue;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between;
+    align-items: center; */
+    flex-wrap: wrap;
+    align-content: center;
+    height: 95vh;
+}
+
+.box {
+    padding: 0.5rem;
+    margin: 1rem;
+    height: 10rem;
+    width: 10rem;
+    background: #0c3d44;
+}
+
+.box-one, .box-six {
+    flex: 5 1 20rem;
+}
