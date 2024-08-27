@@ -1,0 +1,41 @@
+body {
+    margin: 10px;
+    height: 200vh;
+    color: white
+}
+
+.container {
+    border: 3px solid #8f8f8f;
+    display: grid;
+    grid-template: 100px auto 100px, 70fr 30fr;
+    grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+    gap: 10px;
+    height: 100vh;
+}
+
+.box {
+    /* margin: 1rem;
+    height: 10rem;
+    width: 10rem; */
+    background: #0c443d;
+}
+
+.box-one {
+    grid-area: header;
+}
+
+/* .box-two {
+    grid-area: main;
+}
+
+.box-three {
+    grid-area: sidebar;
+} */
+
+.box-four {
+    grid-area: footer;
+}
+
